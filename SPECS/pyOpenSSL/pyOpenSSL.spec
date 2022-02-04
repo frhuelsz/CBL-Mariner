@@ -1,32 +1,25 @@
+# Minimum python3-cryptography version (listed in the CHANGELOG.rst)
+%global min_cryptography_ver 35.0
 Summary:        Python wrapper module around the OpenSSL library
 Name:           pyOpenSSL
-Version:        18.0.0
-Release:        8%{?dist}
+Version:        22.0.0
+Release:        1%{?dist}
 License:        ASL 2.0
 Vendor:         Microsoft Corporation
 Distribution:   Mariner
 Group:          Development/Languages/Python
 URL:            https://github.com/pyca/pyopenssl
-Source0:        https://files.pythonhosted.org/packages/source/p/pyOpenSSL/%{name}-%{version}.tar.gz
+Source0:        https://github.com/pyca/pyopenssl/archive/refs/tags/%{version}.tar.gz#/%{name}-%{version}.tar.gz
 BuildArch:      noarch
-
-%description
-High-level wrapper around a subset of the OpenSSL library.
-
-%package -n     python3-pyOpenSSL
-Summary:        Python wrapper module around the OpenSSL library
 BuildRequires:  python3-devel
 BuildRequires:  python3-setuptools
 BuildRequires:  python3-xml
-Requires:       python3
-Requires:       python3-cryptography
-Requires:       python3-six
 %if %{with_check}
 BuildRequires:  curl-devel
 BuildRequires:  openssl-devel
 BuildRequires:  python3-asn1crypto
 BuildRequires:  python3-cffi
-BuildRequires:  python3-cryptography
+BuildRequires:  python3-cryptography >= %{min_cryptography_ver}
 BuildRequires:  python3-idna
 BuildRequires:  python3-packaging
 BuildRequires:  python3-pip
@@ -34,6 +27,15 @@ BuildRequires:  python3-pyasn1
 BuildRequires:  python3-pycparser
 BuildRequires:  python3-six
 %endif
+
+%description
+High-level wrapper around a subset of the OpenSSL library.
+
+%package -n     python3-%{name}
+Summary:        Python wrapper module around the OpenSSL library
+Requires:       python3
+Requires:       python3-cryptography >= %{min_cryptography_ver}
+Requires:       python3-six
 
 %description -n python3-pyOpenSSL
 High-level wrapper around a subset of the OpenSSL library.
@@ -59,6 +61,10 @@ LANG=en_US.UTF-8  PYTHONPATH=%{buildroot}%{python3_sitelib} \
 %{python3_sitelib}/*
 
 %changelog
+* Fri Feb 04 2022 Thomas Crain <thcrain@microsoft.com> - 22.0.0-1
+- Upgrade to latest upstream version
+- Switch to github release tarballs
+
 * Fri Dec 03 2021 Thomas Crain <thcrain@microsoft.com> - 18.0.0-8
 - Replace easy_install usage with pip in %%check sections
 
