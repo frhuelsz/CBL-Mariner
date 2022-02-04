@@ -1,23 +1,21 @@
 Summary:        A collection of ASN.1-based protocols modules.
 Name:           pyasn1-modules
-Version:        0.2.2
-Release:        6%{?dist}
-Url:            https://pypi.python.org/pypi/pyasn1-modules
+Version:        0.2.8
+Release:        1%{?dist}
 License:        BSD
 Group:          Development/Languages/Python
 Vendor:         Microsoft Corporation
 Distribution:   Mariner
-Source0:        https://files.pythonhosted.org/packages/37/33/74ebdc52be534e683dc91faf263931bc00ae05c6073909fde53999088541/%{name}-%{version}.tar.gz
+URL:            https://pypi.python.org/pypi/pyasn1-modules
+Source0:        https://github.com/etingof/%{name}/archive/refs/tags/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
 BuildArch:      noarch
 
 %description
 This is a small but growing collection of ASN.1 data structures expressed in Python terms using pyasn1 data model.
 
-%package -n     python3-pyasn1-modules
-Summary:        python-pyasn1-modules
-BuildRequires:  python3
+%package -n     python3-%{name}
+Summary:        A collection of ASN.1-based protocols modules.
 BuildRequires:  python3-devel
-BuildRequires:  python3-libs
 %if %{with_check}
 BuildRequires:  python3-pyasn1
 %endif
@@ -26,12 +24,12 @@ Requires:       python3-pyasn1
 
 %description -n python3-pyasn1-modules
 This is a small but growing collection of ASN.1 data structures expressed in Python terms using pyasn1 data model.
-It’s thought to be useful to protocol developers and testers.
+It's thought to be useful to protocol developers and testers.
 All modules are py2k/py3k-compliant.
 
 %prep
 %autosetup
-find . -iname "*.py" | xargs -I file sed -i '1s/python/python3/g' file
+%py3_shebang_fix .
 
 %build
 %py3_build
@@ -52,6 +50,10 @@ popd
 %{python3_sitelib}/*
 
 %changelog
+* Fri Jan 04 2022 Thomas Crain <thcrain@microsoft.com> - 0.2.8-1
+- Upgrade to latest upstream version
+- Use github release tarball instead of pypi source
+
 * Wed Oct 20 2021 Thomas Crain <thcrain@microsoft.com> - 0.2.2-6
 - Add license to python3 package
 - Remove python2 package
