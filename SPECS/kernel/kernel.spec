@@ -7,7 +7,7 @@
 Summary:        Linux Kernel
 Name:           kernel
 Version:        5.15.2.1
-Release:        4%{?dist}
+Release:        5%{?dist}
 License:        GPLv2
 Vendor:         Microsoft Corporation
 Distribution:   Mariner
@@ -389,6 +389,11 @@ ln -sf linux-%{uname_r}.cfg /boot/mariner.cfg
 %{_sysconfdir}/bash_completion.d/bpftool
 
 %changelog
+* Fri Feb 04 2022 Cameron Baird <cameronbaird@microsoft.com> - 5.15.2.1-5
+- Address CVE-2010-0309 CVE-2018-1000026 CVE-2018-16880 CVE-2019-3016
+- CVE-2019-3819 CVE-2019-3887 CVE-2020-25672 CVE-2021-3564 CVE-2021-45095 
+- CVE-2021-45469 CVE-2021-45480
+
 * Wed Feb 02 2022 Rachel Menge <rachelmenge@microsoft.com> - 5.15.2.1-4
 - Add libperf-jvmti.so to tools package
 
