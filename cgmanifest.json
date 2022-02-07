@@ -3889,8 +3889,8 @@
         "type": "other",
         "other": {
           "name": "fontconfig",
-          "version": "2.13.91",
-          "downloadUrl": "https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.13.91.tar.gz"
+          "version": "2.13.95",
+          "downloadUrl": "https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.13.95.tar.gz"
         }
       }
     },
@@ -3922,26 +3922,6 @@
           "name": "fonttosfnt",
           "version": "1.2.1",
           "downloadUrl": "https://www.x.org/pub/individual/app/fonttosfnt-1.2.1.tar.bz2"
-        }
-      }
-    },
-    {
-      "component": {
-        "type": "other",
-        "other": {
-          "name": "foomatic",
-          "version": "4.0.13",
-          "downloadUrl": "http://www.openprinting.org/download/foomatic/foomatic-db-engine-4.0.13.tar.gz"
-        }
-      }
-    },
-    {
-      "component": {
-        "type": "other",
-        "other": {
-          "name": "foomatic-db",
-          "version": "4.0",
-          "downloadUrl": "http://www.openprinting.org/download/foomatic/foomatic-db-4.0-20201104.tar.gz"
         }
       }
     },
@@ -14342,16 +14322,6 @@
       "component": {
         "type": "other",
         "other": {
-          "name": "mythes-it",
-          "version": "2.0.9l",
-          "downloadUrl": "http://downloads.sourceforge.net/sourceforge/linguistico/thesaurus2_it_02_09_l_2008_11_29.zip"
-        }
-      }
-    },
-    {
-      "component": {
-        "type": "other",
-        "other": {
           "name": "mythes-ne",
           "version": "1.1",
           "downloadUrl": "http://download.services.openoffice.org/contrib/dictionaries/thes_ne_NP_v2.zip"
@@ -14575,6 +14545,16 @@
           "name": "netlabel_tools",
           "version": "0.30.0",
           "downloadUrl": "https://github.com/netlabel/netlabel_tools/releases/download/v0.30.0/netlabel_tools-0.30.0.tar.gz"
+        }
+      }
+    },
+    {
+      "component": {
+        "type": "other",
+        "other": {
+          "name": "netpbm",
+          "version": "10.90.00",
+          "downloadUrl": "https://svn.code.sf.net/p/netpbm/code/advanced"
         }
       }
     },
@@ -21643,16 +21623,6 @@
       "component": {
         "type": "other",
         "other": {
-          "name": "pnm2ppa",
-          "version": "1.04",
-          "downloadUrl": "http://download.sourceforge.net/pnm2ppa/pnm2ppa-1.04.tar.gz"
-        }
-      }
-    },
-    {
-      "component": {
-        "type": "other",
-        "other": {
           "name": "po4a",
           "version": "0.60",
           "downloadUrl": "https://github.com/mquinson/po4a/archive/v0.60/po4a-0.60.tar.gz"
@@ -24305,7 +24275,7 @@
         "other": {
           "name": "python-rdflib",
           "version": "4.2.1",
-          "downloadUrl": "http://pypi.python.org/packages/source/r/rdflib/rdflib-4.2.1.tar.gz"
+          "downloadUrl": "https://pypi.python.org/packages/source/r/rdflib/rdflib-4.2.1.tar.gz"
         }
       }
     },
@@ -25443,16 +25413,6 @@
       "component": {
         "type": "other",
         "other": {
-          "name": "rcs",
-          "version": "5.9.4",
-          "downloadUrl": "ftp://ftp.gnu.org/gnu/rcs/rcs-5.9.4.tar.xz"
-        }
-      }
-    },
-    {
-      "component": {
-        "type": "other",
-        "other": {
           "name": "rdist",
           "version": "6.1.5",
           "downloadUrl": "http://www.MagniComp.com/download/rdist/rdist-6.1.5.tar.gz"
@@ -25544,8 +25504,8 @@
         "type": "other",
         "other": {
           "name": "redis",
-          "version": "6.2.5",
-          "downloadUrl": "http://download.redis.io/releases/redis-6.2.5.tar.gz"
+          "version": "6.2.6",
+          "downloadUrl": "https://download.redis.io/releases/redis-6.2.6.tar.gz"
         }
       }
     },
@@ -25725,8 +25685,8 @@
         "type": "other",
         "other": {
           "name": "rpcsvc-proto",
-          "version": "1.4",
-          "downloadUrl": "https://github.com/thkukuk/rpcsvc-proto/releases/download/v1.4/rpcsvc-proto-1.4.tar.gz"
+          "version": "1.4.3",
+          "downloadUrl": "https://github.com/thkukuk/rpcsvc-proto/releases/download/v1.4.3/rpcsvc-proto-1.4.3.tar.xz"
         }
       }
     },
@@ -25774,19 +25734,9 @@
       "component": {
         "type": "other",
         "other": {
-          "name": "rt-tests",
-          "version": "1.8",
-          "downloadUrl": "https://www.kernel.org/pub/linux/utils/rt-tests/older/rt-tests-1.8.tar.xz"
-        }
-      }
-    },
-    {
-      "component": {
-        "type": "other",
-        "other": {
           "name": "rrdtool",
-          "version": "1.7.0",
-          "downloadUrl": "https://github.com/oetiker/rrdtool-1.x/releases/download/v1.7.0/rrdtool-1.7.0.tar.gz"
+          "version": "1.7.2",
+          "downloadUrl": "https://github.com/oetiker/rrdtool-1.x/releases/download/v1.7.2/rrdtool-1.7.2.tar.gz"
         }
       }
     },
@@ -25807,6 +25757,16 @@
           "name": "rsyslog",
           "version": "8.2108.0",
           "downloadUrl": "http://www.rsyslog.com/files/download/rsyslog/rsyslog-8.2108.0.tar.gz"
+        }
+      }
+    },
+    {
+      "component": {
+        "type": "other",
+        "other": {
+          "name": "rt-tests",
+          "version": "1.8",
+          "downloadUrl": "https://www.kernel.org/pub/linux/utils/rt-tests/older/rt-tests-1.8.tar.xz"
         }
       }
     },
@@ -27887,8 +27847,8 @@
         "type": "other",
         "other": {
           "name": "sqlite",
-          "version": "3.34.1",
-          "downloadUrl": "https://www.sqlite.org/2021/sqlite-autoconf-3340100.tar.gz"
+          "version": "3.36.0",
+          "downloadUrl": "https://www.sqlite.org/2021/sqlite-autoconf-3360000.tar.gz"
         }
       }
     },
@@ -28736,16 +28696,6 @@
       "component": {
         "type": "other",
         "other": {
-          "name": "transfig",
-          "version": "3.2.7b",
-          "downloadUrl": "http://downloads.sourceforge.net/mcj/fig2dev-3.2.7b.tar.xz"
-        }
-      }
-    },
-    {
-      "component": {
-        "type": "other",
-        "other": {
           "name": "tree",
           "version": "1.8.0",
           "downloadUrl": "http://mama.indstate.edu/users/ice/tree/src/tree-1.8.0.tgz"
@@ -29048,7 +28998,7 @@
         "other": {
           "name": "urlview",
           "version": "0.9",
-          "downloadUrl": "https://github.com/sigpipe/urlview/archive//urlview-.tar.gz"
+          "downloadUrl": "https://github.com/sigpipe/urlview/archive/08767a/urlview-.tar.gz"
         }
       }
     },
@@ -29277,8 +29227,8 @@
         "type": "other",
         "other": {
           "name": "vim",
-          "version": "8.2.4081",
-          "downloadUrl": "https://github.com/vim/vim/archive/v8.2.4081.tar.gz"
+          "version": "8.2.4233",
+          "downloadUrl": "https://github.com/vim/vim/archive/v8.2.4233.tar.gz"
         }
       }
     },
@@ -29527,8 +29477,8 @@
         "type": "other",
         "other": {
           "name": "wget",
-          "version": "1.20.3",
-          "downloadUrl": "ftp://ftp.gnu.org/gnu/wget/wget-1.20.3.tar.gz"
+          "version": "1.21.2",
+          "downloadUrl": "https://ftp.gnu.org/gnu/wget/wget-1.21.2.tar.gz"
         }
       }
     },
@@ -29617,8 +29567,8 @@
         "type": "other",
         "other": {
           "name": "wpa_supplicant",
-          "version": "2.9",
-          "downloadUrl": "https://w1.fi/releases/wpa_supplicant-2.9.tar.gz"
+          "version": "2.10",
+          "downloadUrl": "https://w1.fi/releases/wpa_supplicant-2.10.tar.gz"
         }
       }
     },
