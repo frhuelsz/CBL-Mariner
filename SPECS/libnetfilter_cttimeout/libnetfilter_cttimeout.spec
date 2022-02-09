@@ -1,14 +1,13 @@
 Summary:    User-space infrastructure for connection tracking timeout
 Name:       libnetfilter_cttimeout
 Version:    1.0.0
-Release:        4%{?dist}
+Release:        5%{?dist}
 License:    GPLv2+
 URL:        http://www.netfilter.org/projects/libnetfilter_cttimeout/index.html
 Group:      System Environment/Libraries
 Vendor:         Microsoft Corporation
 Distribution:   Mariner
 Source0:    http://www.netfilter.org/projects/%{name}/files/%{name}-%{version}.tar.bz2
-%define sha1 libnetfilter_cttimeout=24cba24b0371e80007be4ea0fa9d872df63b8a7a
 
 BuildRequires:  libmnl-devel
 BuildRequires:  kernel-headers
@@ -53,6 +52,9 @@ find %{buildroot} -type f -name '*.la' -exec rm -f {} ';'
 %{_libdir}/*.so
 
 %changelog
+* Tue Feb 08 2022 Thomas Crain <thcrain@microsoft.com> - 1.0.0-5
+- Remove unused `%%define sha1` lines
+
 * Sat May 09 2020 Nick Samson <nisamson@microsoft.com> - 1.0.0-4
 - Added %%license line automatically
 

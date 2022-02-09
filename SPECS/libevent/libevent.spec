@@ -1,11 +1,10 @@
 Summary:	An Event notification library.
 Name:		libevent
 Version:	2.1.8
-Release:        3%{?dist}
+Release:        4%{?dist}
 License:	BSD
 URL:		http://libevent.org
 Source0:	https://github.com/%{name}/%{name}/releases/download/release-%{version}-stable/%{name}-%{version}-stable.tar.gz
-%define sha1 libevent=2a1b8bb7a262d3fd0ed6a080a20991a6eed675ec
 Group:		System/Library
 Vendor:         Microsoft Corporation
 Distribution:   Mariner
@@ -59,6 +58,9 @@ make %{?_smp_mflags} -k check
 %{_libdir}/pkgconfig/libevent_extra.pc
 
 %changelog
+* Tue Feb 08 2022 Thomas Crain <thcrain@microsoft.com> - 2.1.8-4
+- Remove unused `%%define sha1` lines
+
 * Sat May 09 2020 Nick Samson <nisamson@microsoft.com> - 2.1.8-3
 - Added %%license line automatically
 

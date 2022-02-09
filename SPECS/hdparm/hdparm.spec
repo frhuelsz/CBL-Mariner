@@ -1,11 +1,10 @@
 Summary:	command line utility to set and view hardware parameters
 Name:		hdparm
 Version:	9.56
-Release:        4%{?dist}
+Release:        5%{?dist}
 License:	BSD
 URL:		http://sourceforge.net/projects/%{name}/
 Source0:	http://downloads.sourceforge.net/hdparm/%{name}-%{version}.tar.gz
-%define sha1 hdparm=9e143065115229c4f929530157627dc92e5f6deb
 Group:		Applications/System
 Vendor:         Microsoft Corporation
 Distribution:   Mariner
@@ -30,6 +29,9 @@ make DESTDIR=%{buildroot} binprefix=%{_prefix} install
 %{_sbindir}/hdparm
 %{_mandir}/man8/hdparm.8*
 %changelog
+* Tue Feb 08 2022 Thomas Crain <thcrain@microsoft.com> - 9.56-5
+- Remove unused `%%define sha1` lines
+
 * Sun May 31 2020 Henry Beberman <henry.beberman@microsoft.com> - 9.56-4
 - Update make to explicitly consume cflags and ldflags.
 * Sat May 09 2020 Nick Samson <nisamson@microsoft.com> - 9.56-3

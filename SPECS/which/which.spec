@@ -1,11 +1,10 @@
 Summary:	Program shows full path of (shell) commands
 Name:		which
 Version:	2.21
-Release:        7%{?dist}
+Release:        8%{?dist}
 License:	GPLv3+
 URL:		http://savannah.gnu.org/projects/which
 Source0:	http://ftp.gnu.org/gnu/which/%{name}-%{version}.tar.gz
-%define sha1 which=6b6bec3d2b3d4661c164feb81b9b1d22d1359ded
 Group:		Development/Tools
 Vendor:         Microsoft Corporation
 Distribution:   Mariner
@@ -26,6 +25,9 @@ rm -rf %{buildroot}%{_infodir}
 %{_bindir}/*
 %{_mandir}/man1/*
 %changelog
+* Tue Feb 08 2022 Thomas Crain <thcrain@microsoft.com> - 2.21-8
+- Remove unused `%%define sha1` lines
+
 * Sat May 09 2020 Nick Samson <nisamson@microsoft.com> - 2.21-7
 - Added %%license line automatically
 

@@ -4,14 +4,13 @@
 Summary:        the blessed package to manage your versions by scm tags.
 Name:           python-setuptools_scm
 Version:        3.1.0
-Release:        3%{?dist}
+Release:        4%{?dist}
 License:        MIT
 Group:          Development/Languages/Python
 Vendor:         Microsoft Corporation
 Distribution:   Mariner
 Url:            https://pypi.python.org/pypi/setuptools_scm
 Source0:        https://files.pythonhosted.org/packages/source/s/setuptools_scm/setuptools_scm-%{version}.tar.gz
-%define sha1    setuptools_scm=cffffd63429761edece3957321a50fbdb364f043
 
 BuildRequires:  python2
 BuildRequires:  python2-libs
@@ -74,6 +73,9 @@ popd
 %{python3_sitelib}/*
 
 %changelog
+* Tue Feb 08 2022 Thomas Crain <thcrain@microsoft.com> - 3.1.0-4
+- Remove unused `%%define sha1` lines
+
 * Sat May 09 2020 Nick Samson <nisamson@microsoft.com> - 3.1.0-3
 - Added %%license line automatically
 

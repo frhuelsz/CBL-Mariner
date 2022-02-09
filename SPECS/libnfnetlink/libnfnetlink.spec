@@ -1,14 +1,13 @@
 Summary:    Library for netfilter related kernel/userspace communication
 Name:       libnfnetlink
 Version:    1.0.1
-Release:        4%{?dist}
+Release:        5%{?dist}
 License:    GPLv2+
 URL:        http://www.netfilter.org/projects/libnfnetlink/index.html
 Group:      System Environment/Libraries
 Vendor:         Microsoft Corporation
 Distribution:   Mariner
 Source0:    http://www.netfilter.org/projects/%{name}/files/%{name}-%{version}.tar.bz2
-%define sha1 libnfnetlink=27ae2dfbd976e28cb7a417f9e946c901f512dd9a
 
 BuildRequires:  kernel-headers
 
@@ -51,6 +50,9 @@ find %{buildroot} -type f -name '*.la' -exec rm -f {} ';'
 %{_libdir}/*.so
 
 %changelog
+* Tue Feb 08 2022 Thomas Crain <thcrain@microsoft.com> - 1.0.1-5
+- Remove unused `%%define sha1` lines
+
 * Sat May 09 2020 Nick Samson <nisamson@microsoft.com> - 1.0.1-4
 - Added %%license line automatically
 

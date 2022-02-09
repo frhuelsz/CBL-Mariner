@@ -1,14 +1,13 @@
 Summary:        Gnuplot is a portable command-line driven graphing utility.
 Name:           gnuplot
 Version:        5.2.4
-Release:        4%{?dist}
+Release:        5%{?dist}
 License:        Freeware
 URL:            http://www.gnuplot.info/
 Group:          Applications
 Vendor:         Microsoft Corporation
 Distribution:   Mariner
 Source0:        http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
-%define sha1    gnuplot=e31e8d9875216f65f9ed0e57b2f62d9dfb0f0714
 
 %description
 Gnuplot is a portable command-line driven graphing utility for Linux, OS/2, MS Windows, OSX, VMS, and many other platforms. The source code is copyrighted but freely distributed (i.e., you don't have to pay for it). It was originally created to allow scientists and students to visualize mathematical functions and data interactively, but has grown to support many non-interactive uses such as web scripting. It is also used as a plotting engine by third-party applications like Octave. Gnuplot has been supported and under active development since 1986.
@@ -36,6 +35,9 @@ make DESTDIR=%{buildroot} install
 
 
 %changelog
+* Tue Feb 08 2022 Thomas Crain <thcrain@microsoft.com> - 5.2.4-5
+- Remove unused `%%define sha1` lines
+
 * Sat May 09 2020 Nick Samson <nisamson@microsoft.com> - 5.2.4-4
 - Added %%license line automatically
 

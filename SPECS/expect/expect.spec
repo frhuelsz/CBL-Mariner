@@ -1,11 +1,10 @@
 Summary:        Expect is a tool for automating interactive applications
 Name:           expect
 Version:        5.45.4
-Release:        4%{?dist}
+Release:        5%{?dist}
 License:        GPLv2+
 URL:            https://sourceforge.net/projects/expect
 Source0:        https://sourceforge.net/projects/%{name}/files/Expect/%{version}/%{name}%{version}.tar.gz
-%define sha1    expect=a97b2f377c6a799928d6728c2ada55beb7f57d96
 Group:          Development/Tools
 Vendor:         Microsoft Corporation
 Distribution:   Mariner
@@ -56,6 +55,9 @@ make %{?_smp_mflags} test
 
 
 %changelog
+*   Tue Feb 08 2022 Thomas Crain <thcrain@microsoft.com> - 5.45.4-5
+-   Remove unused `%%define sha1` lines
+
 *   Sun May 31 2020 Henry Beberman <henry.beberman@microsoft.com> - 5.45.4-4
 -   Add patch to fix format-security errors. 
 *   Sat May 09 2020 Nick Samson <nisamson@microsoft.com> - 5.45.4-3
